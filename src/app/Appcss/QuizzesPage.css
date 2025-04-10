@@ -1,0 +1,212 @@
+/* Expanded QuizzesPage.css */
+
+.quiz-container {
+    padding: 2rem;
+    background: linear-gradient(to right, #f9f9f9, #e0f7fa);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    color: #222;
+  }
+  
+  .quiz-container h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    animation: fadeInDown 0.6s ease;
+  }
+  
+  .quiz-search {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    padding: 0.8rem;
+    border: 2px solid #00796b;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .quiz-search:focus {
+    border-color: #004d40;
+    box-shadow: 0 0 8px rgba(0, 121, 107, 0.3);
+  }
+  
+  .quiz-form {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border: 1px solid #b2dfdb;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .quiz-form h2 {
+    color: #00695c;
+    margin-bottom: 1.2rem;
+    font-size: 1.6rem;
+  }
+  
+  .quiz-form input,
+  .quiz-form select,
+  .quiz-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s;
+  }
+  
+  .quiz-form input:focus,
+  .quiz-form textarea:focus,
+  .quiz-form select:focus {
+    border-color: #00796b;
+    outline: none;
+  }
+  
+  .quiz-form button {
+    background: #00796b;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .quiz-form button:hover {
+    background-color: #004d40;
+  }
+  
+  .quiz-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2rem;
+    animation: slideInUp 0.6s ease;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .option-button {
+    background-color: #e0f2f1;
+    border: 2px solid #00796b;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .option-button:hover {
+    background-color: #00796b;
+    color: #fff;
+  }
+  
+  .selected {
+    background-color: #43a047 !important;
+    color: #fff;
+    font-weight: bold;
+    border-color: #2e7d32;
+  }
+  
+  .message {
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #c62828;
+  }
+  
+  .explanation {
+    font-size: 1rem;
+    color: #455a64;
+    margin-top: 0.8rem;
+    background-color: #f1f8e9;
+    border-left: 5px solid #689f38;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .timer {
+    font-size: 1rem;
+    color: #f57c00;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .quiz-summary {
+    background-color: #e8f5e9;
+    padding: 2.5rem;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #2e7d32;
+    animation: fadeIn 0.8s ease;
+  }
+  
+  .quiz-list {
+    margin-top: 2rem;
+  }
+  
+  .quiz-item {
+    background: #ffffff;
+    padding: 1.2rem;
+    margin: 0.8rem 0;
+    border-radius: 12px;
+    border-left: 5px solid #00796b;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s;
+  }
+  
+  .quiz-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .quiz-item p {
+    margin: 4px 0;
+    font-size: 1rem;
+  }
+  
+  .quiz-item button {
+    background: #c62828;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  
+  .quiz-item button:hover {
+    background: #b71c1c;
+  }
+  
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

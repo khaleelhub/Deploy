@@ -1,95 +1,83 @@
+'use client'
 import Image from "next/image";
 import styles from "./page.module.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import WelcomePage from "./screens/WelcomePage";
+import LoginPage from "./screens/LoginPage";
+import SignUpPage from "./screens/SignUpPage";
+import HomePage  from "./screens/HomePage";
+import Wallet from "./screens/Wallet";
+import ResetPassword from "./screens/ResentPassword";
+import ReferralPage from "./screens/ReferralPage";
+import VideoPage from "./screens/VideoPage";
+import ProfilePage from "./screens/ProfilePage";
+import MineCenter from "./screens/Minecenter";
+import LeaderDashboard from "./screens/LeaderDashboard";
+import GamingPage from "./screens/GamingPage";
+import AdminPanel from "./screens/AdminPanel";
+import TasksPage from "./screens/TasksPage";
+import MarketPage from "./screens/MarketPage";
+import SettingPage from "./screens/SettingPage";
+import SpinToWinPage from "./screens/SpinToWinPage";
+import BugReportPage from "./screens/BugReportPage";
+import RewordPage from "./screens/RewordPage";
+import DailyStreakPage from "./screens/DailyStreakPage";
+import MissionsPage from "./screens/MissionsPage";
+import AccountUpgradePage from "./screens/AccountUpgradePage";
+import NewsPage from "./screens/NewsPage";
+import QuizzesPage from "./screens/QuizzesPage";
+import AichatPage from "./screens/Aichat";
+import MiningPage from "./screens/MiningTools";
+import Donate from "./screens/Donate";
+import Tutorials from "./screens/Tutorials";
+import faqPage from "./screens/faqPage";
+import supportPage from "./screens/supportPage";
+import analyticsPage from "./screens/analyticsPage";
+import Communitypage from "./screens/communitypage";
 
-export default function Home() {
+
+// Navigations 
+function Page() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <Router>
+      <Routes>
+        <Route  path = "/" element={<WelcomePage/>} />
+        <Route   path = "/Login" element={<LoginPage/>}/>
+        <Route  path = "/SignUp" element={<SignUpPage/>}/>
+        <Route  path = "/Wallet" element={<Wallet/>}/>
+        <Route  path = "/Resentpassword" element={<ResetPassword/>}/>
+        <Route  path = "/Home" element={<HomePage/>}/>
+        <Route  path = "/ReferralPage" element={<ReferralPage/>}/>
+        <Route  path = "/videos" element={<VideoPage/>}/>
+        <Route  path = "/ProfilePage" element={<ProfilePage/>}/>
+        <Route  path = "/MineCennter" element={<MineCenter/>}/>
+        <Route  path = "/LeaderBoard" element={<LeaderDashboard/>}/>
+        <Route  path = "/GamingPage" element={<GamingPage/>}/>
+        <Route  path = "/AdminPanel" element={<AdminPanel/>}/>
+        <Route  path = "/Tasks" element={<TasksPage/>}/>
+        <Route  path = "/Market" element={<MarketPage/>}/>
+        <Route  path = "/Settings" element={<SettingPage/>}/>
+        <Route  path = "/SpinPage" element={<SpinToWinPage/>}/>
+        <Route  path = "/report" element={<BugReportPage/>}/>
+        <Route  path = "/Reword" element ={<RewordPage/>}/>
+        <Route  path = "/streak" element ={<DailyStreakPage/>}/>
+        <Route  path = "/missions" element ={<MissionsPage/>}/>
+        <Route  path = "/upgradeAccount" element ={<AccountUpgradePage/>}/>
+        <Route  path = "/NewsPage" element ={<NewsPage/>}/>
+        <Route  path = "/QuizzesPage" element ={<QuizzesPage/>}/>
+        <Route  path = "/Aichat" element ={<AichatPage/>}/>
+        <Route  path = "/MiningTools" element ={<MiningPage/>}/>
+        <Route  path = "/Donate" element ={<Donate/>}/>
+        <Route  path = "/Tutorials" element ={<Tutorials/>}/>
+        <Route  path = "/faq" element ={<faqPage/>}/>
+        <Route  path = "/support" element ={<supportPage/>}/>
+        <Route  path ="/analystics" element = {<analyticsPage/>}/>
+        <Route  path ="/community" element = {<Communitypage/>}/>
+      </Routes>
+    </Router>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
   );
 }
+
+
+export default Page;

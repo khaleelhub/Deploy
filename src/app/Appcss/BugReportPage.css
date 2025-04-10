@@ -1,0 +1,87 @@
+/* Bug Report Page Styles */
+.bug-report-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f4f6f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bug-report-container h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: #007bff;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .submit-status {
+    font-size: 1.2em;
+    color: #28a745;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-options {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .contact-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .contact-btn:hover {
+    background-color: #218838;
+  }
+  
+  .contact-btn a {
+    color: white;
+    text-decoration: none;
+  }
+  

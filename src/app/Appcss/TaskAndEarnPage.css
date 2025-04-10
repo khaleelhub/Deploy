@@ -1,0 +1,152 @@
+/* Task and Earn Page Styles */
+.task-and-earn-container {
+    padding: 20px;
+    background-color: #f4f6f9;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #007bff;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Task List */
+  .task-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .task-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .task-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .task-item h3 {
+    font-size: 1.2em;
+    color: #007bff;
+  }
+  
+  .task-item p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .task-reward {
+    font-size: 1.2em;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .task-video {
+    margin-top: 10px;
+  }
+  
+  .task-video a {
+    text-decoration: none;
+    color: #007bff;
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .task-video img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .task-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .task-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Task Progress */
+  .task-progress {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar-filled {
+    height: 100%;
+    background-color: #28a745;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+  }
+  
+  .task-complete-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task-complete-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Completed Tasks */
+  .completed-tasks {
+    margin-top: 30px;
+  }
+  
+  .completed-task-item {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .completed-task-item p {
+    margin: 0;
+  }
+  
+  .completed-task-item span {
+    font-weight: bold;
+    color: #28a745;
+  }
+  

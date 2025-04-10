@@ -1,0 +1,219 @@
+/* MiningPage.css */
+
+/* General Styles */
+.mining-container {
+    padding: 20px;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .stats {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .stats p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  .mining-controls, .task-controls {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .mining-controls button, .task-controls button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .mining-controls button:hover, .task-controls button:hover {
+    background-color: #45a049;
+  }
+  
+  .mining-controls button:disabled, .task-controls button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .navigation button {
+    padding: 12px 25px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .navigation button:hover {
+    background-color: #0b7dda;
+  }
+  
+  .navigation button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Task Completion Styles */
+  .task-controls p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .task-controls button {
+    background-color: #FF5722;
+  }
+  
+  .task-controls button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Daily Bonus and Mining Power Boost Styles */
+  .mining-power, .daily-bonus {
+    background-color: #FFEB3B;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mining-power p, .daily-bonus p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .mining-power button, .daily-bonus button {
+    padding: 10px 20px;
+    background-color: #FF9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .mining-power button:hover, .daily-bonus button:hover {
+    background-color: #FB8C00;
+  }
+  
+  .mining-power button:disabled, .daily-bonus button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Premium Features */
+  .premium-status {
+    background-color: #673AB7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .premium-status p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .premium-status button {
+    background-color: #9C27B0;
+  }
+  
+  .premium-status button:hover {
+    background-color: #7B1FA2;
+  }
+  
+  /* Notifications */
+  .notifications {
+    background-color: #FFD54F;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .notifications p {
+    margin: 5px 0;
+  }
+  
+  .notifications button {
+    background-color: #FF5722;
+    padding: 8px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .notifications button:hover {
+    background-color: #e64a19;
+  }
+  
+  /* Loading State */
+  .loading {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2196F3;
+    margin-top: 50px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .mining-container {
+      padding: 15px;
+    }
+  
+    .stats, .mining-controls, .task-controls, .navigation {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mining-controls button, .task-controls button, .navigation button {
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .task-controls p {
+      text-align: center;
+    }
+  
+    .notifications p {
+      text-align: center;
+    }
+  }
+  

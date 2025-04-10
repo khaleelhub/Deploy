@@ -1,0 +1,109 @@
+.settings-container {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .settings-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #2c3e50;
+  }
+  
+  .setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+  }
+  
+  .setting-item:hover {
+    background-color: #f0f8ff;
+  }
+  
+  .setting-item label {
+    flex: 1;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .setting-item input[type="checkbox"] {
+    transform: scale(1.4);
+    cursor: pointer;
+  }
+  
+  .setting-item input[type="text"] {
+    width: 180px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .loading,
+  .error-message {
+    text-align: center;
+    font-size: 18px;
+    padding: 30px;
+    color: #666;
+  }
+  
+  /* DARK MODE STYLING */
+  .dark-mode {
+    background-color: #1c1c1c;
+    color: #eee;
+  }
+  
+  .dark-mode .setting-item {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+  }
+  
+  .dark-mode .setting-item:hover {
+    background-color: #333;
+  }
+  
+  .dark-mode input[type="text"] {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+  }
+  
+  .dark-mode button {
+    background-color: #444;
+    color: #eee;
+  }
+  
+  .dark-mode button:hover {
+    background-color: #555;
+  }
+  

@@ -1,0 +1,123 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(145deg, #eef2f3, #8fd3f4);
+  color: #fff;
+}
+
+.login-form {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(101, 101, 101, 0.889);
+  position: relative;
+}
+
+.login-form h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #3c3c3c;
+  color: #fff;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 11px;
+  top: 30%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #0ff;
+  cursor: pointer;
+  background: transparent;
+  padding: 7px;
+}
+
+.btn-primary,
+.btn-google {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #1225ff;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #4fa4ff;
+}
+
+.btn-google {
+  background-color: #db4437;
+  color: white;
+}
+
+.btn-google:hover {
+  background-color: #c5382b;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.actions a {
+  color: #0000ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.extras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.extras a {
+  color: rgb(0, 30, 255);
+  text-decoration: none;
+}
+
+label {
+  color: #443;
+}
+.error {
+  background-color: #ff3b3b;
+  padding: 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 0.95rem;
+  text-align: center;
+}

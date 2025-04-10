@@ -1,0 +1,266 @@
+/* Appcss/NewsPage.css */
+
+.news-container {
+    padding: 2rem;
+    background: linear-gradient(to right, #f9fafe, #eef1f5);
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    animation: fadeIn 0.8s ease;
+  }
+  
+  .news-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    animation: slideInTop 0.6s ease-in-out;
+  }
+  
+  .news-search {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    padding: 12px 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: block;
+  }
+  
+  .news-search:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.15);
+  }
+  
+  /* Sticky search bar on top */
+  .sticky-search {
+    position: sticky;
+    top: 0;
+    background-color: #f9fafe;
+    z-index: 10;
+    padding-bottom: 1rem;
+  }
+  
+  .news-form {
+    background: #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    animation: popIn 0.5s ease;
+  }
+  
+  .news-form input,
+  .news-form textarea,
+  .news-form select {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  .news-form textarea {
+    min-height: 100px;
+  }
+  
+  .news-form button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .news-form button:hover {
+    background-color: #219150;
+    transform: scale(1.05);
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .news-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .news-card {
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+    padding: 1.2rem;
+    position: relative;
+    transition: 0.3s ease;
+    animation: fadeInUp 0.4s ease forwards;
+  }
+  
+  .news-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+  }
+  
+  .news-card h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin: 0.5rem 0;
+  }
+  
+  .news-card p {
+    color: #444;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    max-height: 90px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .read-more-btn {
+    margin-top: 0.5rem;
+    display: inline-block;
+    color: #3498db;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .news-meta {
+    display: block;
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 0.75rem;
+    font-style: italic;
+  }
+  
+  /* Admin controls */
+  .admin-actions {
+    margin-top: 0.8rem;
+  }
+  
+  .admin-actions button {
+    margin-right: 10px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .admin-actions button:first-child {
+    background: #2980b9;
+  }
+  
+  .admin-actions button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Category Tags */
+  .category-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 0.2rem;
+  }
+  
+  .category-General {
+    background-color: #7f8c8d;
+  }
+  .category-Updates {
+    background-color: #3498db;
+  }
+  .category-Security {
+    background-color: #c0392b;
+  }
+  .category-Opportunities {
+    background-color: #27ae60;
+  }
+  
+  /* New Badge */
+  .new-badge {
+    background-color: #f39c12;
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    float: right;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0 }
+    to { opacity: 1 }
+  }
+  
+  @keyframes slideInTop {
+    from { transform: translateY(-20px); opacity: 0 }
+    to { transform: translateY(0); opacity: 1 }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translateY(15px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes popIn {
+    0% { transform: scale(0.95); opacity: 0 }
+    100% { transform: scale(1); opacity: 1 }
+  }
+  
+  /* Responsive Layout */
+  @media screen and (max-width: 768px) {
+    .news-container {
+      padding: 1rem;
+    }
+  
+    .news-form {
+      padding: 1rem;
+    }
+  
+    .news-card {
+      padding: 1rem;
+    }
+  
+    .news-container h1 {
+      font-size: 2rem;
+    }
+  
+    .news-search {
+      font-size: 0.95rem;
+    }
+  
+    .news-card img {
+      height: 180px;
+    }
+  }
+  

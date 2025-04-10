@@ -1,0 +1,189 @@
+/* Advanced MiningPage.css */
+
+:root {
+    --primary: #007bff;
+    --primary-hover: #0056b3;
+    --light-bg: #ffffff;
+    --dark-bg: #121212;
+    --light-text: #333333;
+    --dark-text: #f0f0f0;
+    --card-light: #f4f4f4;
+    --card-dark: #1e1e1e;
+    --highlight: #ffc107;
+    --success: #28a745;
+    --danger: #dc3545;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .mining-container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--light-bg);
+    color: var(--light-text);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .mining-container.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-text);
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .stat-box {
+    background-color: var(--card-light);
+    border-radius: 16px;
+    padding: 1.2rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .dark-mode .stat-box {
+    background-color: var(--card-dark);
+    color: var(--dark-text);
+  }
+  
+  .stat-box h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-box .value {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .leaderboard-rank {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--highlight);
+  }
+  
+  .avatar-container {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .avatar-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid var(--primary);
+    object-fit: cover;
+  }
+  
+  .mining-actions {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .mining-button {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.9rem 2.2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .mining-button:hover {
+    background-color: var(--primary-hover);
+    transform: scale(1.05);
+  }
+  
+  .mining-log {
+    margin-top: 2rem;
+    background-color: var(--card-light);
+    padding: 1.2rem;
+    border-radius: 12px;
+    max-height: 250px;
+    overflow-y: auto;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    transition: background-color 0.3s;
+  }
+  
+  .dark-mode .mining-log {
+    background-color: var(--card-dark);
+  }
+  
+  .log-entry {
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem 0;
+  }
+  
+  .log-entry:last-child {
+    border-bottom: none;
+  }
+  
+  .badge {
+    display: inline-block;
+    background-color: var(--highlight);
+    color: #000;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: 8px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .toggle-button {
+    background-color: #6c757d;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .toggle-button:hover {
+    background-color: #5a6268;
+  }
+  
+  /* Responsive tweaks */
+  @media (max-width: 768px) {
+    .mining-button {
+      width: 100%;
+    }
+  
+    .controls {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  
+    .stat-box .value {
+      font-size: 1.3rem;
+    }
+  }
+  

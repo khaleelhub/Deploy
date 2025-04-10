@@ -1,0 +1,258 @@
+/* General Leaderboard Page Styles */
+.leaderboard-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .search-bar:focus {
+    border-color: #007BFF;
+  }
+  
+  /* Sorting Options */
+  .sort-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .sort-options label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .sort-options select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .sort-options select:focus {
+    border-color: #007BFF;
+  }
+  
+  /* Leaderboard List */
+  .leaderboard-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Leaderboard Item Styles */
+  .leaderboard-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+  }
+  
+  .leaderboard-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .leaderboard-item.highlight {
+    background-color: #f2f9ff;
+    border: 2px solid #007BFF;
+  }
+  
+  .rank {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-right: 15px;
+  }
+  
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .user-info {
+    flex-grow: 1;
+  }
+  
+  .username {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  .username a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+  }
+  
+  .username a:hover {
+    color: #0056b3;
+  }
+  
+  .details {
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .coins,
+  .streak,
+  .plan,
+  .mode {
+    display: inline-block;
+  }
+  
+  .coins {
+    color: #28a745;
+  }
+  
+  .streak {
+    color: #ff7f00;
+  }
+  
+  .plan {
+    color: #6f42c1;
+  }
+  
+  .mode {
+    color: #17a2b8;
+  }
+  
+  .you-label {
+    font-size: 14px;
+    color: #28a745;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+  
+  /* Pagination or Scroll */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 8px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pagination button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .leaderboard-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .rank {
+      margin-bottom: 10px;
+    }
+  
+    .avatar {
+      margin-bottom: 10px;
+    }
+  
+    .user-info {
+      width: 100%;
+    }
+  
+    .details {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode .leaderboard-container {
+    background-color: #2c2c2c;
+    color: #f5f5f5;
+  }
+  
+  .dark-mode .leaderboard-item {
+    background-color: #444;
+    color: #f5f5f5;
+  }
+  
+  .dark-mode .leaderboard-item.highlight {
+    background-color: #333;
+    border: 2px solid #28a745;
+  }
+  
+  .dark-mode .rank {
+    color: #28a745;
+  }
+  
+  .dark-mode .avatar {
+    border: 2px solid #007BFF;
+  }
+  
+  .dark-mode .username {
+    color: #f5f5f5;
+  }
+  
+  .dark-mode .username a {
+    color: #007BFF;
+  }
+  
+  .dark-mode .coins {
+    color: #28a745;
+  }
+  
+  .dark-mode .streak {
+    color: #ff7f00;
+  }
+  
+  .dark-mode .plan {
+    color: #6f42c1;
+  }
+  
+  .dark-mode .mode {
+    color: #17a2b8;
+  }
+  
+  .dark-mode .you-label {
+    color: #28a745;
+  }
+  
