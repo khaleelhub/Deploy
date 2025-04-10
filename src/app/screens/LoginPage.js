@@ -24,7 +24,7 @@ const Login = () => {
       } else {
         localStorage.removeItem('userEmail');
       }
-      navigate('/Home');
+      navigate('/home');
     } catch (err) {
       setError(err.message);
       setLoading(false);
@@ -36,7 +36,7 @@ const Login = () => {
   const handleGoogleLogin = async () => {
     try {
       await signInWithPopup(auth, googleProvider);
-      navigate("/Home");
+      navigate("/home");
     } catch (err) {
       setError("Google login failed \n Check Your Wifi Or Internet Connection ");
     }
@@ -77,7 +77,7 @@ const Login = () => {
               onChange={() => setRememberMe(!rememberMe)}
             /> Remember me
           </label>
-          <a onClick= {()=> navigate('/Resentpassword')}>Forgot Password?</a>
+          <a onClick= {()=> navigate('/resetpassword')}>Forgot Password?</a>
         </div>
 
         <button

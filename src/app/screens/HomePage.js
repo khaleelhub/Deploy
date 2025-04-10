@@ -71,24 +71,24 @@ const HomePage = () => {
       <section className="quick-actions">
         <div className="action-grid">
           <button onClick={() => navigate("/videos")}>🎥 Watch & Mine</button>
-          <button onClick={() => navigate("/Tasks")}>✅ Task & Earn</button>
-          <button onClick={() => navigate("/GamingPage")}>🎮 Gamify</button>
-          <button onClick={() => navigate("/MineCennter")}>🔥 Mining Board</button>
-          <button onClick={() => navigate("/ReferralPage")}>👥 Referral</button>
-          <button onClick={() => navigate("/Wallet")}>💰 Wallet</button>
-          <button onClick={() => navigate("/Market")}>🛠️ AI Task Market</button>
-          <button onClick={() => navigate("/LeaderBoard")}>🏆 Leaderboard</button>
-          <button onClick={() => navigate("/ProfilePage")}>👤 Profile</button>
-          <button onClick={() => navigate("/SpinPage")}>🎁 Spin to Win</button>
-          <button onClick={() => navigate("/Reword")}>🎉 Rewards</button>
+          <button onClick={() => navigate("/tasks")}>✅ Task & Earn</button>
+          <button onClick={() => navigate("/gaming")}>🎮 Gamify</button>
+          <button onClick={() => navigate("/minecenter")}>🔥 Mining Board</button>
+          <button onClick={() => navigate("/referral")}>👥 Referral</button>
+          <button onClick={() => navigate("/wallet")}>💰 Wallet</button>
+          <button onClick={() => navigate("/market")}>🛠️ AI Task Market</button>
+          <button onClick={() => navigate("/leaderboard")}>🏆 Leaderboard</button>
+          <button onClick={() => navigate("/profile")}>👤 Profile</button>
+          <button onClick={() => navigate("/spin")}>🎁 Spin to Win</button>
+          <button onClick={() => navigate("/reward")}>🎉 Rewards</button>
           <button onClick={() => navigate("/streak")}>🔥 Daily Streak</button>
           <button onClick={() => navigate("/missions")}>🚀 Missions</button>
-          <button onClick={() => navigate("/QuizzesPage")}>🧠 Quizzes</button>
-          <button onClick={() => navigate("/NewsPage")}>📰 Mining News</button>
-          <button onClick={() => navigate("/Aichat")}>🤖 AI Assistant</button>
-          <button onClick={() => navigate("/MiningTools")}>⚙️ Tools</button>
-          <button onClick={() => navigate("/Donate")}>❤️ Donate</button>
-          <button onClick={() => navigate("/Tutorials")}>🎓 Tutorials</button>
+          <button onClick={() => navigate("/quizzes")}>🧠 Quizzes</button>
+          <button onClick={() => navigate("/news")}>📰 Mining News</button>
+          <button onClick={() => navigate("/aichat")}>🤖 AI Assistant</button>
+          <button onClick={() => navigate("/miningtools")}>⚙️ Tools</button>
+          <button onClick={() => navigate("/donate")}>❤️ Donate</button>
+          <button onClick={() => navigate("/tutorials")}>🎓 Tutorials</button>
           <button onClick={() => navigate("/faq")}>❓ FAQ</button>
           <button onClick={() => navigate("/support")}>🛟 Support</button>
           <button onClick={() => navigate("/analytics")}>📈 Analytics</button>
@@ -100,8 +100,8 @@ const HomePage = () => {
           <button onClick={() => navigate("/achievements")}>🏅 Achievements</button>
           <button onClick={() => navigate("/badge")}>🎖️ Badges</button>
           <button onClick={() => navigate("/wallet-history")}>📂 Wallet History</button>
-          <button onClick={() => navigate("/upgradeAccount")}>⚡ Upgrade Account</button>
-          <button onClick={() => navigate("/Settings")}>⚙️ Settings</button>
+          <button onClick={() => navigate("/upgrade")}>⚡ Upgrade Account</button>
+          <button onClick={() => navigate("/settings")}>⚙️ Settings</button>
         </div>
       </section>
 

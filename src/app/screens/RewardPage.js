@@ -5,7 +5,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import axios from "axios";
 import "../Appcss/RewordPage.css";
 
-const RewordPage = () => {
+const RewardPage = () => {
   const [userData, setUserData] = useState(null);
   const [balance, setBalance] = useState(0);
   const [tasksCompleted, setTasksCompleted] = useState(0);
@@ -214,4 +214,4 @@ const RewordPage = () => {
   );
 };
 
-export default RewordPage;
+export default RewardPage;

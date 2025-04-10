@@ -9,7 +9,7 @@ const Welcome = () => {
       <h1 style={styles.welTxt}>Welcome to Tcoins</h1>
       <p style={styles.subTitle}>Simple Way To Earn!</p>
 
-      <button style={styles.startBtn} onClick={() => navigate("Login")}>
+      <button style={styles.startBtn} onClick={() => navigate("login")}>
         Start
       </button>
     </div>

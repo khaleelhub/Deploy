@@ -76,7 +76,7 @@ export default function Signup() {
         }
       }
 
-      navigate("/Login");
+      navigate("/login");
     } catch (err) {
       setError(err.message);
     }
@@ -85,7 +85,7 @@ export default function Signup() {
   const handleGoogleSignup = async () => {
     try {
       await signInWithPopup(auth, googleProvider);
-      navigate("/Login");
+      navigate("/login");
     } catch (err) {
       setError("Google signup failed");
     }
@@ -153,7 +153,7 @@ export default function Signup() {
         </button>
 
         <p>
-          Already have an account? <a onClick={() => navigate('/Login')}>Login</a>
+          Already have an account? <a onClick={() => navigate('/login')}>Login</a>
         </p>
       </form>
     </div>
