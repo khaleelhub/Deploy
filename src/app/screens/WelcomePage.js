@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const Welcome = () => {
+const WelcomePage = () => {
   const navigate = useNavigate();
 
   return (
@@ -45,4 +45,4 @@ const styles = {
   }
 };
 
-export default Welcome;
+export default WelcomePage;

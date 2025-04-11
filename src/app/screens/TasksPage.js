@@ -5,7 +5,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import axios from "axios"; // For making task-related API requests
 import "../Appcss/TaskAndEarnPage.css"; // Import the CSS
 
-const TaskAndEarnPage = () => {
+const TasksPage = () => {
   const [userData, setUserData] = useState(null);
   const [tasks, setTasks] = useState([]);
   const [completedTasks, setCompletedTasks] = useState([]);
@@ -175,4 +175,4 @@ const TaskAndEarnPage = () => {
   );
 };
 
-export default TaskAndEarnPage;
+export default TasksPage;

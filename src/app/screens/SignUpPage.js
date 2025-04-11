@@ -13,7 +13,7 @@ import { doc, setDoc, getDoc, updateDoc } from "firebase/firestore";
 import { useNavigate, useLocation } from "react-router-dom";
 import "../Appcss/Signup.css";
 
-export default function Signup() {
+export default function SignUpPage() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

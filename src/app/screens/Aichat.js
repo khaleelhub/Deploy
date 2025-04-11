@@ -4,7 +4,7 @@ import { doc, getDoc, updateDoc } from "firebase/firestore";
 import axios from "axios";
 import "../Appcss/Aichat.css";
 
-const AiChatPage = () => {
+const Aichat = () => {
   const [messages, setMessages] = useState([]);
   const [userInput, setUserInput] = useState("");
   const [loading, setLoading] = useState(false);
@@ -101,4 +101,4 @@ const AiChatPage = () => {
   );
 };
 
-export default AiChatPage;
+export default Aichat;

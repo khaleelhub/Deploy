@@ -4,7 +4,7 @@ import { auth, googleProvider } from '../firebase';
 import { useNavigate } from 'react-router-dom';
 import '../Appcss/Login.css';
 
-const Login = () => {
+const LoginPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -106,4 +106,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginPage;

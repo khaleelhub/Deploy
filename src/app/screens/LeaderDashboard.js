@@ -5,7 +5,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import "../Appcss/Leaderboard.css";
 import { Link } from "react-router-dom";
 
-const Leaderboard = () => {
+const LeaderDashboard = () => {
   const [users, setUsers] = useState([]);
   const [currentUser, setCurrentUser] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
@@ -99,4 +99,4 @@ const Leaderboard = () => {
   );
 };
 
-export default Leaderboard;
+export default LeaderDashboard;

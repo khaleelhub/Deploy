@@ -5,7 +5,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import axios from "axios"; // For making payment API requests
 import "../Appcss/WalletPage.css";
 
-const WalletPage = () => {
+const Wallet = () => {
   const [userData, setUserData] = useState(null);
   const [balance, setBalance] = useState(0);
   const [transactionHistory, setTransactionHistory] = useState([]);
@@ -270,4 +270,4 @@ const WalletPage = () => {
   );
 };
 
-export default WalletPage;
+export default Wallet;

@@ -5,7 +5,7 @@ import { doc, getDoc, updateDoc } from "firebase/firestore";
 import { useNavigate } from "react-router-dom";
 import "../Appcss/SettingsPage.css";
 
-const SettingsPage = () => {
+const SettingPage = () => {
   const navigate = useNavigate();
   const [settings, setSettings] = useState({});
   const [userId, setUserId] = useState(null);
@@ -110,4 +110,4 @@ const SettingsPage = () => {
   );
 };
 
-export default SettingsPage;
+export default SettingPage;

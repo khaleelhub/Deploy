@@ -4,7 +4,7 @@ import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
 import '../Appcss/MiningPage.css';
 
-const MiningPage = () => {
+const Minecenter = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [userData, setUserData] = useState({});
@@ -200,4 +200,4 @@ const MiningPage = () => {
   );
 };
 
-export default MiningPage;
+export default Minecenter;
