@@ -64,7 +64,6 @@ function Page() {
         <Route path="/miningtools" element={<MiningPage />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/tutorials" element={<Tutorials />} />
-        <Route path="/faq" element={<FaqPage />} />
         
       </Routes>
     </Router>
