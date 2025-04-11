@@ -1,14 +1,14 @@
 import React from "react";
 
 
-const faqPage = () => {
+const FaqPage = () => {
     return (
         <div>
-            <h1>faqPage Page</h1>
+            <h1>FaqPage Page</h1>
         </div>
     )
 };
 
 
 
-export default faqPage;
+export default FaqPage;
