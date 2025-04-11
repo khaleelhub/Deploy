@@ -1,12 +1,12 @@
 import React from "react";
 
 
-const supportPage = () => {
+const SupportPage = () => {
   return (
     <div>
-      <hq>supportPage</hq>
+      <hq>SupportPage</hq>
     </div>
   )
 }
 
-export default supportPage
+export default SupportPage

@@ -3,12 +3,12 @@ import React from 'react'
 
 
 
-const analyticsPage = () => {
+const AnalyticsPage = () => {
   return (
     <div>
-      <h1>analyticsPage</h1>
+      <h1>AnalyticsPage</h1>
     </div>
   )
 };
 
-export default analyticsPage;
+export default AnalyticsPage;
