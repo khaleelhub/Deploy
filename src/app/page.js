@@ -30,9 +30,7 @@ import MiningPage from './screens/MiningTools';
 import Donate from './screens/Donate';
 import Tutorials from './screens/Tutorials';
 import FaqPage from './screens/FaqPage';
-import SupportPage from './screens/SupportPage';
-import AnalyticsPage from './screens/AnalyticsPage';
-import CommunityPage from './screens/CommunityPage';
+
 
 function Page() {
   return (
@@ -67,9 +65,7 @@ function Page() {
         <Route path="/donate" element={<Donate />} />
         <Route path="/tutorials" element={<Tutorials />} />
         <Route path="/faq" element={<FaqPage />} />
-        <Route path="/support" element={<SupportPage />} />
-        <Route path="/analytics" element={<AnalyticsPage />} />
-        <Route path="/community" element={<CommunityPage />} />
+        
       </Routes>
     </Router>
   );
