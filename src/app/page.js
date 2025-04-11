@@ -29,7 +29,6 @@ import AichatPage from './screens/Aichat';
 import MiningPage from './screens/MiningTools';
 import Donate from './screens/Donate';
 import Tutorials from './screens/Tutorials';
-import FaqPage from './screens/FaqPage';
 
 
 function Page() {
